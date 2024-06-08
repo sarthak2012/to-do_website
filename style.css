@@ -1,0 +1,147 @@
+
+    /* Basic styling for the app */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background: linear-gradient(#f4dbfb, #d8dbfe);
+    
+    
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: hidden;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    /* Styling for the todo list container */
+    .todo-container {
+        max-width: fit-content;
+        max-height: fit-content;
+        background: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 60px;
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    
+    .todo-name{
+        color: black;
+    }
+    /* Styling for task input */
+    input[type="text"], input[type="date"], input[type="time"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        border: 2px solid #fda085;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+    
+    input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+        border-color: #f6d365;
+    }
+    
+    /* Styling for the task list */
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    li {
+        padding: 12px;
+        border-bottom: 1px solid #fda085;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.2s;
+    }
+    
+    li:hover {
+        background-color: rgba(253, 160, 133, 0.1);
+    }
+    
+    /* Styling for task completion checkbox */
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    /* Styling for delete button */
+    button {
+        background-color: #055275;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #f6d365;
+    }
+    
+    /* Styling for the timer display */
+    .timer {
+        font-weight: bold;
+        margin-right: 10px;
+        color: #fda085;
+    }
+    
+    /* Styling for calendar container */
+    .calendar-container {
+        margin: 20px auto;
+        max-width: 400px;
+        text-align: center;
+        color: white;
+    }
+    
+    .calendar-container h2 {
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    #calendarList {
+        list-style: none;
+        padding: 0;
+        color: #fff;
+    }
+    
+    .checkbox-container {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      .checkbox-container input[type="checkbox"] {
+        display: none;
+      }
+      
+      .checkbox-container input[type="checkbox"] + label {
+        cursor: pointer;
+        font-size: 20px;
+      }
+      
+      .checkbox-container input[type="checkbox"] + label::before {
+        content: "\2605"; /* Unicode character for a star */
+        display: inline-block;
+        margin-right: 5px; /* Adjust spacing between star and label */
+      }
+      
+      .checkbox-container input[type="checkbox"]:checked + label::before {
+        color: gold; /* Change color of star when checked */
+      }
+      .golden {
+        color: gold;
+      }
